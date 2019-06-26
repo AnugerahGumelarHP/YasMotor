@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">YasMotor</string>
+    <string name="hello_user">Hello user</string>
+    <string name="date">Date</string>
+    <string name="deskripsi_apk">lol</string>
+    <string name="atau">Atau</string>
+    <string name="login">LOGIN</string>
+    <string name="signup">SIGNUP</string>
+    <string name="konfirmasi_pembelian">KONFIRMASI PEMBELIAN</string>
+    <string name="nomor_kendaraan">Nomor Kendaraan</string>
+    <string name="nomor_polisi">Nomor Polisi</string>
+    <string name="harga_kendaraan">Harga Kendaraan</string>
+    <string name="tipe_kendaraan">Tipe Kendaraan</string>
+    <string name="email_pembeli">Email Pembeli</string>
+    <string name="nama_pembeli">Nama Pembeli</string>
+    <string name="tanggal_pembelian">Tanggal Pembelian</string>
+    <string name="input_pembelian">INPUT PEMBELIAN</string>
+    <string name="nomor_transaksi">Nomor Transaksi</string>
+    <string name="password">Password</string>
+</resources>

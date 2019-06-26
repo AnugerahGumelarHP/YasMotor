@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#254FB8"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_padding"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/img_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher_foreground"
+        android:background="@drawable/roun_rect_yellow"
+        />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_user"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date"
+        android:textSize="18sp"
+        />
+
+    <LinearLayout
+        android:id="@+id/option_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            app:cardElevation="3dp"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="6dp">
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+                <ImageView
+                    android:id="@+id/img_inputpembelian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:src="@drawable/beli"/>
+                <Button
+                    android:id="@+id/btn_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pembelian"
+                    android:background="@drawable/roun_rect_yellow"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            app:cardElevation="3dp"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="6dp">
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+                <ImageView
+                    android:id="@+id/img_riwayatpembelian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:src="@drawable/riwayat"/>
+                <Button
+                    android:id="@+id/btn_riwayat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="History"
+                    android:background="@drawable/roun_rect_yellow"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</LinearLayout>
