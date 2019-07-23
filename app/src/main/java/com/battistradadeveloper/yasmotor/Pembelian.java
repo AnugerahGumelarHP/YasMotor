@@ -40,13 +40,12 @@ public class Pembelian extends AppCompatActivity {
                 if (name.isEmpty() && email.isEmpty()&& type.isEmpty()&& number.isEmpty() && sum.isEmpty()){
                     Toast.makeText(Pembelian.this, "please fill details", Toast.LENGTH_SHORT).show();
                 }else {
-
                     databaseHelper.insertdata(name,email,type,number,sum);
                     etname.setText("");
                     etemail.setText("");
                     ettype.setText("");
                     etnumber.setText("");
-                    etsum.setText("");
+                    etsum.setText("Rp. "+sum);
                     Intent intent = new Intent(Pembelian.this,RiwayatPembelian.class);
                     startActivity(intent);
                 }

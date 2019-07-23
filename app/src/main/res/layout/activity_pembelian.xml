@@ -31,65 +31,65 @@
             android:orientation="vertical"
             android:padding="@dimen/activity_padding"
             android:layout_marginBottom="5dp">
-                    <!--Nama Pembeli-->
-                    <TextView
+            <!--Nama Pembeli-->
+            <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/nama_pembeli"
                         android:textStyle="bold"/>
-                    <EditText
+            <EditText
                         android:id="@+id/username_buyer"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="@string/nama_pembeli"
                         android:inputType="text"
                         android:layout_marginBottom="5dp"/>
-                    <!--Email Pembeli-->
-                    <TextView
+            <!--Email Pembeli-->
+            <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/email_pembeli"
                         android:textStyle="bold"/>
-                    <EditText
+            <EditText
                         android:id="@+id/email_buyer"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="textEmailAddress"
                         android:hint="@string/email_pembeli"
                         android:layout_marginBottom="5dp"/>
-                    <!--Tipe Kendaraan : Honda, Yamaha, etc-->
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/tipe_kendaraan"
-                        android:textStyle="bold"/>
-                    <EditText
-                        android:id="@+id/tipe_kendaraan"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="@string/tipe_kendaraan"
-                        android:inputType="textCapWords"
-                        android:layout_marginBottom="5dp"/>
-                    <!--Nomor Kendaraan-->
-                    <TextView
+            <!--Nomor Kendaraan-->
+            <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/nomor_kendaraan"
                         android:textStyle="bold"/>
-                    <EditText
+            <EditText
                         android:id="@+id/nomor_kendaraan"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="@string/nomor_kendaraan"
                         android:inputType="textCapWords"
                         android:layout_marginBottom="5dp"/>
-                    <!--Harga Kendaraan-->
-                    <TextView
+            <!--Tipe Kendaraan : Honda, Yamaha, etc-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tipe_kendaraan"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/tipe_kendaraan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/tipe_kendaraan"
+                android:inputType="textCapWords"
+                android:layout_marginBottom="5dp"/>
+            <!--Harga Kendaraan-->
+            <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/harga_kendaraan"
                         android:textStyle="bold"/>
-                    <EditText
+            <EditText
                         android:id="@+id/harga_kendaraan"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"

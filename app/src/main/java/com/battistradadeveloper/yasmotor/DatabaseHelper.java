@@ -53,6 +53,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     }
 
+    public boolean deleteitem (int name){
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.execSQL("delete from "+TABLE+" where "+NAME+" ="+name);
+
+        return true;
+    }
+
     public List<DataModel> getdata(){
         // DataModel dataModel = new DataModel();
         List<DataModel> data=new ArrayList<>();
@@ -71,7 +78,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             dataModel.setEmail(email);
             dataModel.setType(type);
             dataModel.setNumber(number);
-            dataModel.setSum(sum);
+            dataModel.setSum("Rp. "+sum);
             stringBuffer.append(dataModel);
             // stringBuffer.append(dataModel);
             data.add(dataModel);
