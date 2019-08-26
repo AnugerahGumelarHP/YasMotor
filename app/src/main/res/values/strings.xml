@@ -7,14 +7,23 @@
     <string name="login">LOGIN</string>
     <string name="signup">SIGNUP</string>
     <string name="konfirmasi_pembelian">KONFIRMASI PEMBELIAN</string>
-    <string name="nomor_kendaraan">Nomor Kendaraan</string>
     <string name="nomor_polisi">Nomor Polisi</string>
     <string name="harga_kendaraan">Harga Kendaraan</string>
-    <string name="tipe_kendaraan">Tipe Kendaraan</string>
     <string name="email_pembeli">Email Pembeli</string>
     <string name="nama_pembeli">Nama Pembeli</string>
     <string name="tanggal_pembelian">Tanggal Pembelian</string>
     <string name="input_pembelian">INPUT PEMBELIAN</string>
     <string name="nomor_transaksi">Nomor Transaksi</string>
     <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="delete">Delete</string>
+    <string name="send">Send</string>
+    <string name="name_db">Jessyka swan</string>
+    <string name="tipe">Tipe</string>
+    <string name="tipe_kendaraan">Tipe Kendaraan</string>
+    <string name="alamat_email">Alamat email</string>
+    <string name="nama">Nama</string>
+    <string name="harga">Harga</string>
+    <string name="nomor">Nomor</string>
+    <string name="nomor_kendaraan">Nomor Kendaraan</string>
 </resources>

@@ -1,12 +1,12 @@
-package com.battistradadeveloper.yasmotor;
+package com.battistradadeveloper.yasmotor.Activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.GridView;
 
+import com.battistradadeveloper.yasmotor.R;
 import com.daimajia.slider.library.Animations.DescriptionAnimation;
 import com.daimajia.slider.library.SliderLayout;
 import com.daimajia.slider.library.SliderTypes.BaseSliderView;
@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
         btnPembelian.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent pembelian = new Intent(MainActivity.this,Pembelian.class);
+                Intent pembelian = new Intent(MainActivity.this, Pembelian.class);
                 startActivity(pembelian);
             }
         });
@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
         btnRiwayat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent riwayat = new Intent(MainActivity.this,RiwayatPembelian.class);
+                Intent riwayat = new Intent(MainActivity.this, RiwayatPembelian.class);
                 startActivity(riwayat);
             }
         });

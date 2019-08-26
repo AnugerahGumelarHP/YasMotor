@@ -1,15 +1,26 @@
-package com.battistradadeveloper.yasmotor;
+package com.battistradadeveloper.yasmotor.Adapter;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
+import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.battistradadeveloper.yasmotor.Helper.DatabaseHelper;
+import com.battistradadeveloper.yasmotor.Model.DataModel;
+import com.battistradadeveloper.yasmotor.R;
 
 import java.util.List;
 
+import static android.support.v4.content.ContextCompat.startActivity;
+
 public class RecycleAdapter extends RecyclerView.Adapter<RecycleAdapter.Myholder> {
+    DatabaseHelper database;
     List<DataModel> dataModelArrayList;
 
     public RecycleAdapter(List<DataModel> dataModelArrayList) {
@@ -18,7 +29,6 @@ public class RecycleAdapter extends RecyclerView.Adapter<RecycleAdapter.Myholder
 
     class Myholder extends RecyclerView.ViewHolder{
         TextView name,email,type,number,sum;
-//        ImageView hapus;
 
         public Myholder(View itemView) {
             super(itemView);

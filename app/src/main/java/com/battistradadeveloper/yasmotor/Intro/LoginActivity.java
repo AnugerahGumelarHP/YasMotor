@@ -1,4 +1,4 @@
-package com.battistradadeveloper.yasmotor;
+package com.battistradadeveloper.yasmotor.Intro;
 
 import android.content.Intent;
 import android.support.v7.app.AlertDialog;
@@ -11,6 +11,9 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.battistradadeveloper.yasmotor.Activity.MainActivity;
+import com.battistradadeveloper.yasmotor.R;
 
 public class LoginActivity extends AppCompatActivity {
     TextView txtLogin, txtSignup;

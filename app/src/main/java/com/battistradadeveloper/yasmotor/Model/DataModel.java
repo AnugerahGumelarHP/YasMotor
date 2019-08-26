@@ -1,11 +1,31 @@
-package com.battistradadeveloper.yasmotor;
+package com.battistradadeveloper.yasmotor.Model;
 
 public class DataModel {
+    private int id;
     public String name;
     public String email;
     public String type;
     public String number;
     public String sum;
+
+    public DataModel(){
+    }
+
+    public DataModel(String name, String email, String type, String number, String sum) {
+        this.name = name;
+        this.email = email;
+        this.type = type;
+        this.number = number;
+        this.sum = sum;
+    }
+
+    public int getId(){
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getName() {
         return name;

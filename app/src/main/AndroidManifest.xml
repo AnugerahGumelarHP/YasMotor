@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.battistradadeveloper.yasmotor">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
 
     <application
         android:allowBackup="true"
@@ -9,17 +12,17 @@
         android:roundIcon="@drawable/yaslogo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RiwayatPembelian"></activity>
-        <activity android:name=".Pembelian" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".SplashScreen">
+        <activity android:name=".Activity.RiwayatPembelian"></activity>
+        <activity android:name=".Activity.Pembelian" />
+        <activity android:name=".Intro.LoginActivity" />
+        <activity android:name=".Intro.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name=".Activity.MainActivity" />
     </application>
 
 </manifest>

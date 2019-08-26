@@ -4,14 +4,59 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".RiwayatPembelian">
+    android:padding="@dimen/activity_padding"
+    android:background="#254FB8"
+    tools:context=".Activity.RiwayatPembelian">
 
-    <android.support.v7.widget.RecyclerView
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/recycle"
-        >
-    </android.support.v7.widget.RecyclerView>
+        android:layout_height="wrap_content"
+        android:text="Riwayat Pembelian Anda"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="10dp">
+        <Button
+            android:id="@+id/btn_deleteall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hapus Semua data"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/roun_rect_yellow"/>
+        <Button
+            android:id="@+id/btn_sendall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kirim Semua data"
+            android:background="@drawable/roun_rect_yellow"/>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/activity_padding">
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/recycle"
+                >
+            </android.support.v7.widget.RecyclerView>
+        </android.support.v7.widget.CardView>
+    </ScrollView>
+
 
 
 </LinearLayout>

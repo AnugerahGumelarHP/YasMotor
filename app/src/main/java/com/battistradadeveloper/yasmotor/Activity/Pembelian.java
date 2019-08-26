@@ -1,4 +1,4 @@
-package com.battistradadeveloper.yasmotor;
+package com.battistradadeveloper.yasmotor.Activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +7,10 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.battistradadeveloper.yasmotor.Helper.DatabaseHelper;
+import com.battistradadeveloper.yasmotor.Model.DataModel;
+import com.battistradadeveloper.yasmotor.R;
 
 public class Pembelian extends AppCompatActivity {
     TextView submitdata;
@@ -40,13 +44,13 @@ public class Pembelian extends AppCompatActivity {
                 if (name.isEmpty() && email.isEmpty()&& type.isEmpty()&& number.isEmpty() && sum.isEmpty()){
                     Toast.makeText(Pembelian.this, "please fill details", Toast.LENGTH_SHORT).show();
                 }else {
-                    databaseHelper.insertdata(name,email,type,number,sum);
+                    databaseHelper.insertdata(new DataModel(name,email,type,number,sum));
                     etname.setText("");
                     etemail.setText("");
                     ettype.setText("");
                     etnumber.setText("");
                     etsum.setText("Rp. "+sum);
-                    Intent intent = new Intent(Pembelian.this,RiwayatPembelian.class);
+                    Intent intent = new Intent(Pembelian.this, RiwayatPembelian.class);
                     startActivity(intent);
                 }
             }

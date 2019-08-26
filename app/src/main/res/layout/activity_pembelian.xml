@@ -9,7 +9,7 @@
     android:padding="@dimen/activity_padding"
     android:gravity="center"
     android:background="#254FB8"
-    tools:context=".Pembelian">
+    tools:context=".Activity.Pembelian">
 
     <TextView
         android:id="@+id/txt_activitypembelian"

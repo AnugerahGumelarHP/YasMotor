@@ -9,7 +9,7 @@
     android:padding="@dimen/activity_padding"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".LoginActivity">
+    tools:context=".Intro.LoginActivity">
 
     <ImageView
         android:id="@+id/img_login"
